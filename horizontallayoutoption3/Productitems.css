@@ -1,0 +1,582 @@
+
+
+.sub-header select{
+  background-color: transparent;
+  color: #848484;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+
+
+
+/*------ FOOTER CSS----------- */
+
+
+
+
+
+.badge-custom {
+  border: 1px solid #55AE36 ;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 500;
+  color: #55AE36;
+  border-radius: 30px;
+  padding:2px 15px;
+}
+.badge-custom:nth-of-type(2){
+  color: #FF624D;
+ 
+}
+
+.badge-custom:nth-of-type(4), .badge-custom:nth-of-type(3){
+  color:  #868686;
+}
+
+
+.badge-custom img{
+  width: 30px;
+  height: 30px;
+  
+}
+
+
+.quote-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.btn-outline-primary {
+  border-radius: 30px;
+}
+
+.tab-btn {
+  border: none;
+  background: none;
+  font-weight: 500;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+}
+
+.product-items{
+  width: 84%;
+  margin-left: 9rem;
+}
+
+/* Breadcrumb */
+.breadcrumb a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+
+
+
+.form-select{
+    border: 1px solid #000000;
+    border-radius: 30px;
+    font-size: 16px;
+  padding: 5px 30px;
+   
+}
+
+.nav-tabs{
+  border-bottom: 2px solid #D0D0D0;
+  padding-bottom: 20px;
+}
+
+.tab-btn{
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600 !important;
+}
+
+
+
+
+
+.table thead th {
+  background-color: #F5F5F7;
+  font-weight: 500;
+  color: #000000;
+  border-bottom: 2px solid #e9ecef;
+  font-size: 14px;
+  padding: 20px;
+}
+
+
+
+.table tbody tr td {
+  border: none;
+  padding: 16px 20px;
+  font-size: 15px;
+}
+
+.table tbody tr + tr {
+  border-top: 1px solid #e9ecef;
+}
+
+tr.odd td{
+ 
+ } 
+
+ tr.even td{
+   background-color:  #fff;
+  } 
+
+
+
+
+.table-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #1d61c7  !important;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #ffffff !important;
+}
+
+
+.btn-view {
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-weight: 500;
+  background: transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  outline: none !important;
+}
+
+.quote-card h6{
+     font-weight: 600;
+     font-size: 24px;
+}
+
+.form-label{
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.select-kg{
+  width: 100px !important;
+  margin-left: 1rem !important;
+  border-radius:30px !important;
+  border: 2px solid #D3D3D3;
+  padding: 10px ;
+}
+
+.form-control{
+  border: 2px solid #D3D3D3;
+  border-radius: 30px !important;
+}
+.form-control::placeholder{
+  color:#C9C9C9;
+}
+
+.request-quote{
+     background-color: #408CC1;
+     color: white;
+     border-radius: 30px;
+
+}
+.request-Sample{
+     color: #408CC1;
+     border: 2px solid #408CC1;
+     border-radius: 30px;
+}
+.request-quote{
+    height: 50px;
+    border: 2px solid #408CC1;
+}
+.request-Sample{
+        height: 50px;
+        background-color: #FFFFFF;
+}
+
+.quote-desctiption h2{
+  font-size: 16px;
+  color: #000000;
+}
+
+.quote-desctiption {
+  color:#9D9D9D;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.quote-desctiption:last-child {
+  border-bottom: unset !important;
+}
+
+.quote-desctiption div{
+  margin-top: 15px;
+  margin-left: 1.1rem;
+}
+
+.product-desc{
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+
+/* EXTRA ADDED DESIGN FOR LEFT SIDE OUT PANEL OPTION */
+
+
+.accordion-button:not(.collapsed) {
+
+  background-color: #f8f9fa;
+
+  color: #000;
+
+  box-shadow: none;
+}
+
+
+
+.divider {
+
+  width: 1px;
+
+  height: 40px;
+
+  background-color: #D0D0D0;
+
+}
+
+
+.contact-item small {
+
+  display: block;
+
+  color: #656565;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+}
+.product-logo {
+
+  max-width: 120px;
+
+  margin-bottom: 10px;
+
+}
+
+
+.details-section {
+
+  padding: 1rem 1.5rem;
+
+}
+
+
+
+.details-section p {
+
+  margin-bottom: 0.5rem;
+
+}
+
+
+.details-section strong {
+
+  width: 180px;
+
+  display: inline-block;
+
+}
+.accordion-header{
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #000000;
+
+  padding: 30px 30px 0 20px;
+
+
+
+}
+
+
+
+.details-section span{
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #000000;
+
+}
+
+.details-section div{
+
+  color: #656565;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+}
+.accordion-item{
+
+  margin-top: 1.5rem;
+
+  border: 2px solid #D0D0D0 !important;
+
+  border-radius: 10px;
+
+}
+
+.otherdetails{
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #000000;
+
+  padding: 20px 30px 10px 20px;
+}
+.nav-tabs {
+
+  margin-top: 1.5rem;
+
+}
+
+.contact-card {
+
+  background-color: #fff;
+
+  border-radius: 10px;
+
+   border: 2px solid #E7E7E7;   
+
+  padding: 1.2rem 1.5rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 1.5rem;
+
+  margin-top: 1rem;
+
+}
+
+
+.contact-logo img {
+
+  width: 90px;
+
+  height: auto;
+
+}
+
+.contact-item {
+
+  text-align: left;
+
+}
+
+.contact-item a {
+
+  color: #408CC1;
+
+  font-weight: 600;
+
+  font-size: 16px;
+
+  text-decoration: none;
+
+}
+
+
+
+/* --- 2. Desktop Header Layout (Default) --- */
+
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 30px;
+  white-space: nowrap;
+}
+
+.logo-c {
+  color: #007bff;
+  font-size: 30px;
+}
+
+.logo-market {
+  font-weight: normal;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+
+
+@media (max-width: 767px) {
+
+
+
+
+
+
+/* SUB HEADER SECTION  */
+.sub-header{
+padding: unset ;
+}
+
+.cancelicon{
+     text-align: right !important;
+     font-size: 2rem;
+}
+
+
+
+.table-container{
+overflow-x:auto ;
+margin-bottom: 2rem;
+}
+.table-container tbody tr {
+width: 300px !important;
+background-color: red;
+}
+
+.sub-header{
+margin-top: 4rem !important;
+flex-direction: column !important;
+}
+.chemarketplacebtn{
+width: 210px;
+font-size: 14px;
+}
+
+.latest-news{
+min-width: 250px;
+}
+
+.latest-news img{
+margin-right: 6px;
+}
+
+.col-lg-4{
+margin: 0 auto;
+}
+
+.product-items{
+margin-left: unset;
+margin: 0 auto;
+}
+
+
+
+.breadcrumb{
+margin-top: 4rem;
+}
+
+.badge-custom{
+margin-top: 1rem;
+}
+
+
+
+
+.contact-card {
+flex-direction: column;
+text-align: center;
+align-items: unset;
+gap: unset;
+margin-top: 10px;
+}
+
+.divider {
+display: none;
+}
+
+
+
+.quote-card{
+margin-top: 20px;
+}
+
+
+
+
+
+}
+
+
+
+
+/* FOOTER TABLET VIEW  */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+
+
+
+/* HEADER SECTION  */
+
+
+
+/* HEADERSECTION CSS */
+
+/* HEADER MENU FOR MOBILE VIEW */
+
+  .product-items {
+    margin: 0 auto;
+    
+  }
+
+ .sub-header{
+    margin-top: 4rem !important;
+    padding: 10px 0 !important;
+  }
+ 
+  .quote-card{
+    margin-top: 2rem;
+  }
+
+}
+
+
+
+
+
+
+
+/* FOR LARGE SCREEN STYLING */
+
+
+
+
+

@@ -1,0 +1,717 @@
+/* HEADER CSS */
+
+/* MOBILE MENU WORKING FOR HEADER */
+
+.mobile-menu.active { left: 0; }
+.mobile-menu ul { list-style: none; padding: 0; }
+.mobile-menu li { margin: 15px 0; font-weight: 500; }
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  transition: left 0.4s ease;
+  padding: 20px;
+  z-index: 999;
+}
+.burger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+.cancelicon{
+  margin-left: 80%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+
+/* Mobile Menu Toggle (Initially hidden for desktop) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 0;
+    color: #555;
+}
+
+
+/* MOBILE NAVIGATION BURGER START */
+
+ /* Class to disable page scrolling */
+ .no-scroll {
+  overflow: hidden; 
+  height: 100vh;
+}
+
+
+/* 🔴 FIX 2: Explicitly hide the mobile menu and overlay on desktop by default */
+.mobile-menu, .overlayhead {
+    /* Hides the mobile menu in the default (desktop) view */
+   display: none; 
+}
+
+
+
+/* HEADER CSS */
+
+
+
+.headerlink li{
+    list-style: none;
+    margin-right: 10px;
+}
+.headerlink li a{
+  text-decoration: none;
+  color : #848484;
+ 
+}
+.headerlink li a.linkactive{
+  border-bottom: 3px solid #408CC1;
+  padding-bottom: 6px ;
+  color: #408CC1;
+}
+.headerlink li a:hover{
+  border-bottom: 3px solid #408CC1;
+  padding-bottom: 6px ;
+  color: #408CC1;
+  
+}
+
+.logo{
+    width:151px;
+    height: 42px;
+}
+.search{
+    width:350px;
+    min-width: 250px;
+    height: 44px;
+    border-radius: 30px;
+    border: 2px solid #E8E8E8;
+    padding-left: 20px;
+}
+.languageselector{
+    width: 96px;
+    height: 44px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.account,.cart{
+    border: 1px solid #000000;
+    width: 44px;
+    height: 44px;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.header-right,.header-left{
+    display: flex;
+    align-items: center;
+}
+.header{
+    margin: 0 9rem;
+}
+
+/* SUB-HEADER CSS */
+
+
+.sub-header{
+  justify-content: space-between;
+  padding: 10px 8rem ;
+  background-color: #000000;
+  color:  #FFFFFF;
+}
+
+
+
+
+.chemarketplacebtn{
+    width: 264px;
+    height: 44px;
+    border-radius: 30px;
+    background-color: #408CC1;
+    margin-left: 3rem;
+    color: #FFFFFF;
+}
+
+.forsellerbuyer h2{
+  font-size: 16px;
+  font-weight: 500;
+  color: #848484;
+}
+.forsellerbuyer span{
+  color: #848484;
+
+}
+
+
+
+/* FOOTER CSS */
+
+.footer-section {
+    position: relative;
+    background: url('./img/footerimage.png') no-repeat center center/cover;
+    color: #fff;
+    padding-bottom: 2rem;
+    margin-top: 8rem;
+  }
+  
+  .footer-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.7); /* Black with opacity */
+     transition: 0.3s ease;
+     opacity: 1; /* hidden by default */
+     z-index: 0;
+  }
+  
+  .footer-section .blue-section,
+  .footer-section .white-section,
+  .footer-section .bottom-bar {
+    position: relative;
+    z-index: 1;
+  }
+  
+ 
+  /* White section */
+  .white-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem !important; 
+  }
+  
+  .white-section h6 {
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .white-section a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+
+  .white-section .col-md-2{
+    margin-top: 20px;
+  }
+  
+  .white-section a:hover {
+    color: #007bff;
+  }
+  
+  /* Bottom bar */
+  .bottom-bar {
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 0.85rem;
+  }
+
+  .white-section{
+     width: 80%;
+     margin: 0 auto;
+     
+     padding: 2rem;
+     border-radius: 10px;
+  }
+
+.blue-section{
+    width: 80%;
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #408CC1;
+    transform: translateY(-30%);
+    height: 150px;
+}
+ .container h5{
+    width: 40%;
+    text-align: left;
+}
+
+
+.copyright-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  
+  .copyright-section ul{
+    display: flex;
+  
+  }
+  
+  .copyright-section ul li{
+           display: flex;        
+          list-style: none;
+          margin-right:2rem ;
+          font-size: 14px;
+          font-weight: 500;
+          color: #000000;
+  }
+  .copyright-section p {
+  font-weight: 500;
+  color: #3E3E3E;
+  font-size: 14px;
+  }
+
+
+.getintouch{
+    border: 2px solid #408CC1;
+    font-size: 16px;
+    font-weight: 600;
+    color: #408CC1;
+    border-radius: 30px;
+    padding: 6px 30px;
+  } 
+  
+
+
+
+/* header and footer for mobile view */
+@media (max-width:767px) {
+    
+
+  .sub-header{
+    padding: 10px 0rem ;
+  }
+  
+  
+  
+
+  .header{
+    margin: 0 1rem;
+    position: relative;
+    margin-bottom:2rem ;
+}
+
+
+.sub-header{
+    margin-top: 4rem;
+    flex-direction: column;
+}
+
+.languageselector{
+    display: none;
+  }
+    .main-header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        position: relative;
+    }
+    
+   
+  
+    /* Show the hamburger menu toggle */
+    .menu-toggle {
+        display: block;
+  margin-left: unset;
+
+    }
+    
+    .header-actions {
+        gap: 5px;
+        order: 2;
+    }
+    
+    .search {
+      width: 72% !important;
+        position: absolute;
+        top: 120%;
+        right: 2%;
+        
+    }
+    
+    .icon-links a {
+        padding: 8px 10px;
+        margin-left: 0;
+        font-size: 18px;
+    }
+    .menu-toggle{
+       position: absolute;
+       top: 120%;
+       left: 0%;
+    }
+
+
+
+    .mobile-menu {
+        /* 🔴 FIX 3: Re-enable display for mobile only, then use transform for sliding */
+        display: block; 
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+        z-index: 100;
+       transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;        
+        overflow-y: auto; 
+    }
+    
+    .mobile-menu.menu-open {
+        transform: translateX(0);
+    }
+    
+    /* Styling the list within the mobile menu */
+    .mobile-menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    
+    .mobile-menu li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .mobile-menu a {
+        display: block;
+        padding: 0px 10px;
+        font-size: 17px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    /* Overlay to close the menu when clicking outside */
+    .overlayhead {
+        /* 🔴 FIX 3: Re-enable display for mobile only */
+        display: none; 
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 50;
+    }
+    
+    .overlayhead.menu-open {
+        display: block;
+    }
+    
+
+
+    
+    .headerlink{
+        position: absolute;
+       flex-direction: column  !important;
+    }
+  /* Hide the desktop navigation */
+  .headerlink {
+    display: none !important;
+}
+
+
+/* FOOTER SECTION  */
+
+.white-section {
+    text-align: center;
+  }
+
+.blue-section h5 {
+    font-size: 1rem;
+    width: unset;
+  }
+
+.copyright-section{
+    display: unset;
+    margin: 0 auto;
+  }
+  .copyright-section p{
+    text-align: center;
+  }
+
+.white-section ul{
+    padding: 0px;
+  }
+  
+  .white-section .copyright-section ul li{
+    margin-left: 8px;
+  }
+  
+  .white-section .row>*{
+    flex-shrink: unset;
+    width: unset;
+    max-width: unset;
+    
+  }
+  
+  .white-section,.blue-section{
+    height: unset;
+    width: 90%;
+  
+  }
+
+  
+  
+  
+  .copyright-section ul li{
+   margin-right:0rem;
+
+  }
+
+
+  .white-section .col-md-2{
+    margin-top: 15px;
+    text-align: left;
+    margin: 0 auto !important;
+  }
+  
+  
+  
+  .white-section{
+   
+    padding: 2rem 22px !important;
+   padding-top: 1rem !important; 
+    
+  }
+  
+  
+  .white-section .col-md-5{
+    width: 100% !important;
+  }
+
+
+  .blue-section div{
+    flex-direction: column;
+   }
+ .blue-section .container div div:last-child{
+   margin-right: 2rem;
+ }
+ .blue-section img{
+  width: 50px;
+}
+
+}
+
+/* header and footer for tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.header{
+    margin: 0 1rem;
+    position: relative;
+}
+
+
+.sub-header{
+    margin-top: 4rem;
+    padding: 10px 2rem ;
+}
+
+
+
+.languageselector{
+    display: none;
+  }
+    .main-header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        position: relative;
+    }
+    
+   
+  
+    /* Show the hamburger menu toggle */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .header-actions {
+        gap: 5px;
+        order: 2;
+    }
+    
+    .search {
+      width: 72% !important;
+        position: absolute;
+        top: 130%;
+        right: 8%;
+        
+    }
+    
+    .icon-links a {
+        padding: 8px 10px;
+        margin-left: 0;
+        font-size: 18px;
+    }
+    .menu-toggle{
+       position: absolute;
+       left: 0%;
+    }
+
+
+
+/* --- Mobile Slide Menu Styles --- */
+  
+ /* Hide the desktop navigation */
+ .headerlink {
+    display: none !important;
+}
+
+
+.mobile-menu {
+    /* 🔴 FIX 3: Re-enable display for mobile only, then use transform for sliding */
+    display: block; 
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    z-index: 100;
+   transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;        
+    overflow-y: auto; 
+  }
+  
+  .mobile-menu.menu-open {
+    transform: translateX(0);
+  }
+  
+  /* Styling the list within the mobile menu */
+
+
+
+  .mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+  
+  .mobile-menu li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mobile-menu a {
+    display: block;
+    padding: 0px 10px;
+    font-size: 17px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Overlay to close the menu when clicking outside */
+  .overlayhead {
+    /* 🔴 FIX 3: Re-enable display for mobile only */
+    display: none; 
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+  }
+  
+  .overlayhead.menu-open {
+    display: block;
+  }
+  
+   /* Show the hamburger menu toggle */
+   .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+  }
+
+
+/* footer section */
+
+.white-section .col-md-5{
+    width: 100% !important;
+  }
+  
+  .white-section .col-md-2{
+    padding-left: 4rem;
+}
+.white-section .row{
+    /* justify-content: center  !important; */
+  }
+  .white-section,.blue-section{
+    height: unset;
+    width: 90%;
+
+}
+
+
+
+
+/* FOOTER SECTION  */
+.white-section .row>*{
+    flex-shrink: unset;
+    width: unset;
+    max-width: unset;
+    
+  }
+  
+  .white-section  .col-md-2{
+    margin-top: 1.5rem;
+  }
+  
+  .blue-section .container{
+    display: flex  !important;
+    align-items: center;
+  }
+  
+  .blue-section .container h5{
+    width: unset;
+  
+  }
+  
+  
+  .blue-section .container div:last-child{
+    margin-right: 2rem;
+  
+  }
+
+
+.sub-header select{
+  margin-left: unset;
+}
+  
+}
+
+
+/* SMALL MOBILE DEVICE  */
+
+@media (max-width: 350px) {
+  .sub-header{
+     padding-left:2rem ;
+     text-align: center;
+  }
+}
+

@@ -1,0 +1,843 @@
+body{
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Customers Suppliers section */
+
+.suppliersection {
+    background-color: #F5F5F7;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
+}
+.suppliersection img{
+    margin:2rem  2rem 0 0;
+    
+
+}
+
+.suppliersection h2{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: medium;
+    width: 280px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+
+}
+
+/* LARGEST SUPLLIER SECTION */
+.largest-supplier {
+     margin-left: 8rem;
+}
+
+.largest-supplier h2{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: semibold;
+    width: 650px;
+}
+.largest-supplier p{
+    width: 650px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: medium;
+    color: #BEBEBE;
+    margin-top: 10px;
+}
+.largest-supplier div:last-child{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.largest-supplier div:last-child div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 286px;
+    height: 296px;
+    border: 2px solid #E6E6E6;
+    border-radius: 3px;
+    margin: 10px 10px;
+    background-color: #FFFFFF;
+
+}
+
+.largest-supplier-card img{
+    filter: grayscale(100%);
+
+
+}
+span.read-icon{
+    display: none !important;
+}
+
+.largest-supplier-card div:hover img {
+    filter: grayscale(10%);
+    display: block;
+    
+}
+
+.largest-supplier-card div:hover{
+    box-shadow: rgba(64, 140, 193, 0.5) 0px 5px 15px 0px;
+    
+}
+.largest-supplier-card div:hover span.read-icon{
+    display: flex !important;
+    }
+    
+.largest-supplier-card span{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #408CC1;
+   background-color: #bcdef7;
+   border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #408CC1 ;
+}
+
+
+
+/* TESTIMONIAL SECTION */
+
+
+.testimonial{
+    margin: 10px 9rem;
+}
+.testimonial a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #408CC1;
+    font-weight: 600;
+}
+.customername{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #0F1125;
+    font-size: 20px;
+}
+.customerrole{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #717276;
+    font-size: 16px;
+}
+.customer-review{
+    width: 280px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.customer-reviews div{
+    margin-right: 1.5rem;
+
+}
+.trusted-section{
+    margin: 2rem 8.3rem;
+}
+.trusted-section h2{
+    font-size: 20px;
+    font-weight: 500;
+    width: 500px;
+
+}
+
+
+
+
+
+  
+  
+  
+
+
+  
+   
+   
+   
+    
+  
+  
+
+.clothing{
+    color:#002953; 
+    font-size: 30px;
+     font-weight:700
+}
+
+
+
+
+
+
+
+  
+  /* Responsive adjustments */
+/* MOBILE VIEW  */
+
+  @media (max-width: 767px) {
+  
+
+.chemarketplacebtn{
+  display: none;
+}
+
+
+/* SIDE MARGIN LEFTFOR ALL CONTAINER */
+
+.Products-section{
+    margin:0 2rem ;
+}
+.clothing{
+    font-size: 20px;
+}
+
+.testimonial{
+    margin: 10px 2rem;
+}
+
+
+
+
+
+
+/*  SUPPLIER SECTION*/
+.suppliersection h2 {
+    margin-left: unset;
+}
+.suppliersection div{
+    overflow-x: auto;
+}
+
+
+.largest-supplier-card div{
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+}
+
+.largest-supplier{
+    margin-left: unset;
+}
+.largest-supplier h2 {
+    font-size: 20px;
+    width: unset;
+    margin-left: 2rem;
+}
+.largest-supplier p {
+    width: unset;
+    font-size: 12px;
+    margin-left: 2rem;
+}
+
+.trusted-section{
+    display: none !important;
+} 
+/* testimonial section  */
+
+.customer-reviews{
+    overflow-x: auto;
+} 
+
+    
+   
+  
+    
+    
+    
+
+
+
+  
+  
+
+
+  }
+  
+
+  /* TABLET VIEW */
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+
+
+
+
+    .chemarketplacebtn{
+      display: none;
+    }
+
+
+
+/* SIDE MARGIN LEFTFOR ALL CONTAINER */
+
+.Products-section{
+    margin:0 2rem ;
+}
+.clothing{
+    font-size: 20px;
+}
+
+.testimonial{
+    margin: 30px 3rem;
+}
+
+.banner-section {
+    margin: 10px 0rem;
+   
+
+}
+
+
+/* banner section  */
+
+/* PRODUCT SECTION */
+
+
+
+
+/*  SUPPLIER SECTION*/
+.suppliersection h2 {
+    margin-left: unset;
+}
+.suppliersection div{
+    overflow-x: auto;
+}
+
+
+.largest-supplier-card div{
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+}
+
+.largest-supplier{
+    margin-left: unset;
+}
+.largest-supplier h2 {
+    font-size: 20px;
+    width: unset;
+    margin-left: 2rem;
+}
+.largest-supplier p {
+    width: unset;
+    font-size: 12px;
+    margin-left: 2rem;
+}
+
+.trusted-section{
+    display: none !important;
+} 
+/* testimonial section  */
+
+.customer-reviews{
+    overflow-x: auto;
+} 
+
+
+
+
+
+
+
+  }
+
+
+
+  /* PRODUCT LISTING STYLES  */
+
+
+
+   /* Sidebar - visible only on large screens */
+   .filter-sidebar {
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 15px 20px;
+    overflow-y: auto;
+  }
+
+  /* Product cards grid */
+  .product-card {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: 0.3s;
+    width: 300px;
+ position: relative;
+ border-radius: 10px;
+  }
+
+
+  .product-card:hover {
+    border: 1px solid rgb(23, 177, 228);
+   border-radius: 10px;
+
+  }
+  .product-card:hover .product-img {
+    filter: brightness(0.8); /* 0 = black, 1 = normal */
+    transition: 0.3s ease;
+  }
+  
+
+  .product-img{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+  }
+  .brand-logo{
+    top: 10%;
+    position: absolute;
+  }
+
+  .product-body{
+    padding:0 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .select-btn{
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
+    border: 2px solid  #408CC1;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #408CC1;
+    font-weight: 600;
+  }
+
+
+  /* Mobile Filter Dropdown */
+  #mobileFilterMenu {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .filter-title {
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filter-values {
+    display: none;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+.product-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #F5F5F7;
+    padding: 20px;
+}
+.product-header{
+    margin-left: 20px;
+}
+
+
+.product-card p{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-card span{
+    color: #A7A7A7;
+    font-size: 14px;
+    font-weight: 400 ;
+}
+
+.product-card h6{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.filter-title{
+    display: flex;
+    align-items: center;
+
+}
+.filter-title h2{
+   font-weight: 500;
+   font-size: 16px;
+   color: #408CC1;
+}
+
+
+  /* Hide sidebar in mobile */
+  @media (max-width: 991px) {
+    .filter-sidebar {
+      display: none;
+    }
+    #filterBtn {
+      display: block;
+    }
+  }
+
+
+  @media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+.filter-sidebar input{
+}
+
+
+
+
+
+/* VIEW ALL  */
+
+
+
+
+/* Basic Reset and Container Styling */
+.categories-container {
+    display: flex; /* Arranges items horizontally */
+    gap: 10px; /* Space between category items */
+    overflow-x: auto; /* Enables horizontal scrolling if items exceed width */
+    padding: 10px 10px 10px 0;
+    /* Hide scrollbar for a cleaner look (optional - may vary by browser) */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    flex-wrap: wrap;
+}
+
+.categories-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+/* Base Category Item Styling */
+.category-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline from links */
+    color: #333;
+    min-width: 190px; /* Ensure items have a minimum width */
+    height: 70px;
+    border-radius: 35px; /* Half of height for rounded edges */
+    padding: 0 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    /* This makes sure the image/icon and text are side by side in the "View All" */
+}
+
+.text-label {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap; /* Prevents text from wrapping */
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 5px; /* Space between icon/image and text */
+}
+
+/* --- 1. Styling the "View ALL" item --- */
+.category-item.view-all {
+    background-color: black;
+    color: white;
+    /* Ensure the blue icon circle is positioned relative to the item */
+    position: relative;
+    padding-left: 80px; /* Adjust based on icon circle size */
+}
+
+.icon-circle {
+    /* The large blue circle */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px; /* Match height of category-item */
+    height: 70px;
+    border-radius: 50%;
+    background-color: #3498db; /* Blue color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Important for containing the icon/image */
+}
+
+.icon-circle .icon {
+    /* Icon styling */
+    font-size: 30px;
+    color: white;
+    line-height: 1; /* Aligns the emoji/icon properly */
+}
+
+/* --- 2. Styling the image-based items (Agrochemicals, Animal Feed) --- */
+.category-item.agrochemicals,
+.category-item.animal-feed {
+    justify-content: flex-end; /* Push text to the right if no icon/image is defined */
+    padding-left: 80px; /* Space for the image on the left */
+    position: relative; /* To position the background image */
+    background-color: #F5F5F7;
+}
+
+.category-item.agrochemicals .text-label,
+.category-item.animal-feed .text-label {
+    /* Adjust text alignment for these items */
+    text-align: left;
+    padding-left: 10px;
+}
+.text-label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.category-item.agrochemicals{
+    width: 232px !important;
+
+}
+
+
+.category-item.animal-feed {
+    width: 300px !important ;
+
+}
+/* General image styling for the circular effect */
+.category-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px; /* Match height for circular shape */
+    height: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Specific background images (Replace these with your actual image URLs) */
+.category-item.agrochemicals:before {
+    /* Using a placeholder image for 'Agrochemicals' */
+    background-image: url('./img/product/icon/Rectangle\ 543961.png');
+    /* Note: You should have an image that matches the style you want */
+}
+
+.category-item.animal-feed:before {
+    /* Using a placeholder image for 'Animal & Nutrition Feed' */
+    background-image: url('./img/product/icon/Rectangle\ 543961\ \(1\).png');
+    /* Note: You should have an image that matches the style you want */
+}
+.product-title{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.product-selection{
+    margin: 1rem 10px 1rem 0;
+}
+
+.product-selection select{
+  width: 203px;
+  height: 44px;
+  border-radius: 30px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  margin-right: 1rem;
+  padding-left: 1rem;
+
+}
+
+input[type="checkbox"] {
+  /* 1. Remove the default browser styling */
+  -webkit-appearance: none; /* For Chrome/Safari */
+  -moz-appearance: none;    /* For Firefox */
+  appearance: none;         /* Standard */
+
+  /* 2. Set the desired dimensions */
+  width: 25px; 
+  height: 25px; 
+  
+  /* 3. Style the new "box" */
+  border: 2px solid #C2C2C2;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.filter-values  div {
+  display: flex;
+  align-items: center;
+
+  color: #696969;
+  font-weight: 500;
+  font-size: 14px;
+  
+}
+
+.filtervalue  div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.filter-sidebar p{
+  font-size: 16px;
+  color: #000000;
+  margin-top: 1.4rem;
+  font-weight: 500;
+}
+
+
+.filter-group-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding: 0 10px;
+}
+#sortby{
+    display: none;
+   
+}
+
+
+.product-section{
+    padding-left:unset ;
+    padding-right:unset ;
+    width: 80%;
+
+}
+
+/* product listing styles */
+
+
+@media screen and (max-width:767px) {
+    #sortby{
+        display: flex;
+        width: 203px;
+        height: 44px;
+        border-radius: 30px;
+        border: 1px solid #000000;
+        font-size: 16px;
+        color: #000000;
+        font-weight: 500;
+        padding-left: 1rem;
+    }
+    .product-selection:last-child{
+        display: none;
+    }
+
+    .product-card {
+    margin: 1rem auto;
+      }
+
+      input[type="checkbox"]{
+        margin-right: 10px;
+
+      }
+      .filter-values div{
+        margin-bottom: 10px;
+      }
+
+      .product-section{
+         width: 100% !important;
+      }
+
+      .product-list-container{
+        margin-top: 1.5rem;
+      }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.product-section{
+    width: 100% !important;
+}
+
+
+}
+
+
+
+/* LOGO SLIDER */
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 15s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  
+  
