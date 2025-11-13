@@ -310,42 +310,78 @@ ol, ul{
 
 }
 
-/* LARGEST SUPLLIER SECTION */
-.largest-supplier {
-   margin-left: 8rem;
-}
-
-.largest-supplier h2{
-  font-size: 50px;
-  font-weight: 600;
-  font-style: semibold;
-  width: 650px;
-}
-.largest-supplier p{
-  width: 650px;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: medium;
-  color: #BEBEBE;
-  margin-top: 10px;
-}
-.largest-supplier div:last-child{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.largest-supplier div:last-child div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 286px;
-  height: 296px;
-  border: 2px solid #E6E6E6;
-  border-radius: 3px;
-  margin: 10px 10px;
-  background-color: #FFFFFF;
-
-}
+/* LARGEST SUPLLIER SECTION */.largest-supplier {
+     margin-left: 8rem;
+    }
+    
+    .largest-supplier h2{
+        font-size: 50px;
+        font-weight: 600;
+        font-style: semibold;
+        width: 650px;
+    }
+    .largest-supplier p{
+        width: 650px;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: medium;
+        color: #BEBEBE;
+        margin-top: 10px;
+    }
+    .largest-supplier div:last-child{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .largest-supplier div:last-child div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 286px;
+        height: 296px;
+        border: 2px solid #E6E6E6;
+        border-radius: 3px;
+        margin: 10px 10px;
+        background-color: #FFFFFF;
+    
+    }
+    
+    .largest-supplier-card img{
+        filter: grayscale(100%);
+    
+    
+    }
+    span.read-icon{
+        display: none !important;
+    }
+    
+    .largest-supplier-card div:hover img {
+        filter: grayscale(10%);
+        display: block;
+        
+    }
+    
+    .largest-supplier-card div:hover{
+        box-shadow: rgba(64, 140, 193, 0.5) 0px 5px 15px 0px;
+        
+    }
+    .largest-supplier-card div:hover span.read-icon{
+        display: flex !important;
+        }
+        
+    .largest-supplier-card span{
+        width: 40px;
+        height: 40px;
+        border: 2px solid #408CC1;
+       background-color: #bcdef7;
+       border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #408CC1 ;
+    }
+    
 /* TESTIMONIAL SECTION */
 
 
