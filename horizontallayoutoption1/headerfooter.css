@@ -366,7 +366,7 @@
     /* Show the hamburger menu toggle */
     .menu-toggle {
         display: block;
-  margin-left: unset;
+        margin-left: unset;
 
     }
     
@@ -524,7 +524,7 @@
   
   
   .copyright-section ul li{
-   margin-right:1rem;
+   margin-right:10px;
 
   }
 
