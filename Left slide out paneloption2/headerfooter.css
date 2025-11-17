@@ -66,7 +66,9 @@
 
 /* HEADER CSS */
 
-
+.sub-header img{
+  margin-right: 8px;
+}
 
 .headerlink li{
     list-style: none;
@@ -93,13 +95,29 @@
     width:151px;
     height: 42px;
 }
+
+
+.search-group{
+  /* position: relative; */
+}
+
+
+.searchicon{
+  display: none;
+  position: absolute;
+  left: 12px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+
+}
 .search{
     width:350px;
     min-width: 250px;
     height: 44px;
     border-radius: 30px;
     border: 2px solid #E8E8E8;
-    padding-left: 20px;
+    padding-left: 36px;
 }
 .languageselector{
     width: 96px;
@@ -130,7 +148,7 @@
 
 .sub-header{
   justify-content: space-between;
-  padding: 10px 8rem ;
+  padding: 10px 9rem ;
   background-color: #000000;
   color:  #FFFFFF;
 }
@@ -191,12 +209,12 @@
  
   /* White section */
   .white-section {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #FFFFFF;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     height: 420px;
     display: flex;
     flex-direction: column;
-    padding-top: 5rem !important; 
+    padding-top: 3rem !important; 
   }
   
   .white-section h6 {
@@ -212,7 +230,7 @@
 
 
   .white-section .col-md-2{
-    margin-top: 20px;
+    margin-top: 50px;
   }
   
   .white-section a:hover {
@@ -226,15 +244,34 @@
   }
 
   .white-section{
-     width: 80%;
+     width: 88%;
      margin: 0 auto;
-     
      padding: 2rem;
      border-radius: 10px;
   }
 
+.white-section .col-md-5 p{
+  color: #002953;
+    font-size: 32px;
+    font-weight: 600;
+    margin-right: 167px;
+
+}
+.white-section .col-md-5 {
+  margin-right: 6rem;
+
+
+}
+.white-section .col-md-2:last-child{
+  padding-left: 5rem;
+}
+
+.white-section .col-md-5 img{
+  margin-bottom: 2.5rem;
+}
+
 .blue-section{
-    width: 80%;
+    width: 88%;
     margin: 1rem auto;
     padding: 2rem;
     border-radius: 10px;
@@ -258,7 +295,7 @@
   
   .copyright-section ul{
     display: flex;
-  
+    padding-left: 0;
   }
   
   .copyright-section ul li{
@@ -269,6 +306,9 @@
           font-weight: 500;
           color: #000000;
   }
+ 
+
+
   .copyright-section p {
   font-weight: 500;
   color: #3E3E3E;
@@ -431,6 +471,20 @@
 
 /* FOOTER SECTION  */
 
+
+
+
+
+
+
+
+.white-section .col-md-5 p{
+    margin-right: 0px;
+
+}
+.white-section .col-md-2:last-child {
+  padding-left: 12px;
+}
 .white-section {
     text-align: center;
   }
@@ -442,7 +496,6 @@
 
 .copyright-section{
     display: unset;
-    margin: 0 auto;
   }
   .copyright-section p{
     text-align: center;
@@ -452,16 +505,14 @@
     padding: 0px;
   }
   
-  .white-section .copyright-section ul li{
-    margin-left: 8px;
-  }
+ 
   
-  .white-section .row>*{
+  /* .white-section .row>*{
     flex-shrink: unset;
     width: unset;
     max-width: unset;
-    
-  }
+
+  } */
   
   .white-section,.blue-section{
     height: unset;
@@ -473,7 +524,7 @@
   
   
   .copyright-section ul li{
-   margin-right:0rem;
+   margin-right:1rem;
 
   }
 
@@ -481,10 +532,13 @@
   .white-section .col-md-2{
     margin-top: 15px;
     text-align: left;
-    margin: 0 auto !important;
+    margin: 10px auto !important;
   }
   
-  
+  .white-section p{
+    margin-right: 0px;
+    
+}
   
   .white-section{
    
@@ -503,7 +557,7 @@
     flex-direction: column;
    }
  .blue-section .container div div:last-child{
-   margin-right: 2rem;
+   margin-right: 46px;
  }
  .blue-section img{
   width: 50px;
@@ -650,13 +704,17 @@
 
 
 /* footer section */
+.white-section .col-md-2:last-child {
+  padding-left: 16px;
+}
 
 .white-section .col-md-5{
     width: 100% !important;
   }
   
   .white-section .col-md-2{
-    padding-left: 4rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
 }
 .white-section .row{
     /* justify-content: center  !important; */

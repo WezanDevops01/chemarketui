@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemical Offerings</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+  background: #f5f6f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.section-container {
+  margin: auto;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding-bottom: 8px;
+  color: #686868;
+  font-weight: 500;
+}
+
+.tab.active {
+  color: hsla(205, 51%, 50%, 1);
+  border-bottom: 2px solid #408CC1;
+}
+
+/* Cards Grid */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.cards {
+  background: hsla(0, 0%, 100%, 1);
+  border-radius: 8px;
+  padding: 25px 40px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  width: 300px;
+}
+.cards:hover{
+background-color: #408CC1;
+border: 2px solid #295EE4;
+color: white;
+}
+.cards:hover h4,
+.cards:hover p
+{
+    color: white;
+} 
+
+.cards:hover button{
+color: white;
+border: 2px solid white;
+}
+
+
+
+.cards h4 {
+  color: hsla(205, 51%, 50%, 1);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Card Text */
+.cards p {
+    color: hsla(0, 0%, 0%, 1);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 0 !important;
+
+}
+
+.cards .label {
+  color: hsla(0, 0%, 64%, 1);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-top: 8px;
+}
+
+/* Select Button */
+.cards button {
+  margin-top: 18px;
+  padding: 8px 25px;
+  background: none;
+  border: 2px solid hsla(205, 51%, 50%, 1);
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  color: hsla(205, 51%, 50%, 1);
+  padding: 1rem 7.5rem;
+}
+
+.cards button:hover {
+  background: #0070ff;
+  color: #fff;
+}
+
+/* View All Button */
+.view-btn-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-all-btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 2px solid hsla(205, 51%, 50%, 1);
+  background: hsla(205, 51%, 50%, 1);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.nav-tabs-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+.nav-tabs-container h2{
+color: hsla(0, 0%, 0%, 1);
+font-weight: 590;
+font-size: 24px;
+
+}
+.section-container{
+background-color: #F5F5F7;
+
+}
+@media screen and (max-width:767px) {
+    .cards{
+        padding: 25px 20px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+.cards{
+    padding: 25px 20px;
+
+}
+
+}
+
+  </style>
+  
+</head>
+<body>
+
+<section class="section-container">
+
+    <div class="nav-tabs-container">
+        <h2>View Our Chemical Offerings</h2>
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-tab="all">View All</button>
+    <button class="tab" data-tab="food">Food</button>
+    <button class="tab" data-tab="home">Home Products</button>
+  </div>
+    </div>
+
+
+
+  <!-- Cards Wrapper -->
+  <div id="card-container" class="card-container"></div>
+
+  <div class="view-btn-wrapper">
+    <button class="view-all-btn">View All →</button>
+  </div>
+</section>
+
+<script >
+
+
+
+
+// Sample Data
+const data = {
+  all: [
+    { name: "(N-) Butyl Acetate", volume: "996 KG", valid: "2026-12-31" },
+    { name: "(N-) Butyl Acetate", volume: "996 KG", valid: "2026-12-31" },
+    { name: "(N-) Butyl Acetate", volume: "996 KG", valid: "2026-12-31" },
+    { name: "(N-) Butyl Acetate", volume: "996 KG", valid: "2026-12-31" },
+  ],
+  food: [
+    { name: "Citric Acid", volume: "500 KG", valid: "2025-10-01" },
+    { name: "Sodium Benzoate", volume: "300 KG", valid: "2026-01-15" },
+  ],
+  home: [
+    { name: "Liquid Detergent Base", volume: "800 KG", valid: "2026-07-08" },
+    { name: "Surface Cleaner Base", volume: "450 KG", valid: "2025-09-22" }
+  ]
+};
+
+const cardContainer = document.getElementById("card-container");
+const tabs = document.querySelectorAll(".tab");
+
+// Render Cards
+function renderCards(category) {
+  const items = data[category];
+  cardContainer.innerHTML = "";
+
+  items.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("cards");
+
+    card.innerHTML = `
+      <h4>${item.name}</h4>
+      <p>${item.volume}</p>
+      <p class="label">Available Volume</p>
+
+      <p>${item.valid}</p>
+      <p class="label">Valid Till</p>
+
+      <p>DDP</p>
+      <p class="label">Incoterms</p>
+
+      <button>Select</button>
+    `;
+
+    cardContainer.appendChild(card);
+  });
+}
+
+// Tab Click Handler
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelector(".tab.active").classList.remove("active");
+    tab.classList.add("active");
+
+    const category = tab.getAttribute("data-tab");
+    renderCards(category);
+  });
+});
+
+// Default Load
+renderCards("all");
+
+
+
+</script>
+</body>
+</html>

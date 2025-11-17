@@ -1,30 +1,7 @@
 body{
     background-color: #FFFFFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Customers Suppliers section */
-
 .suppliersection {
     background-color: #F5F5F7;
     padding: 2rem;
@@ -38,7 +15,6 @@ body{
     
 
 }
-
 .suppliersection h2{
     font-size: 24px;
     font-weight: 500;
@@ -48,12 +24,10 @@ body{
     margin-top: 1rem;
 
 }
-
 /* LARGEST SUPLLIER SECTION */
 .largest-supplier {
      margin-left: 8rem;
 }
-
 .largest-supplier h2{
     font-size: 50px;
     font-weight: 600;
@@ -86,7 +60,6 @@ body{
     background-color: #FFFFFF;
 
 }
-
 .largest-supplier-card img{
     filter: grayscale(100%);
 
@@ -101,7 +74,6 @@ span.read-icon{
     display: block;
     
 }
-
 .largest-supplier-card div:hover{
     box-shadow: rgba(64, 140, 193, 0.5) 0px 5px 15px 0px;
     
@@ -210,6 +182,10 @@ span.read-icon{
   display: none;
 }
 
+.filter-sidebar{
+  display: none;
+}
+
 
 /* SIDE MARGIN LEFTFOR ALL CONTAINER */
 
@@ -265,20 +241,6 @@ span.read-icon{
 .customer-reviews{
     overflow-x: auto;
 } 
-
-    
-   
-  
-    
-    
-    
-
-
-
-  
-  
-
-
   }
   
 
@@ -361,8 +323,16 @@ span.read-icon{
     overflow-x: auto;
 } 
 
+/* FITLER SECTION */
 
-
+.filter-sidebar{
+  display: block;
+  width: 200px;
+}
+.Products-section{
+ background-color: red;
+  width: 73% !important;
+}
 
 
 
@@ -680,22 +650,8 @@ span.read-icon{
 
 }
 
-input[type="checkbox"] {
-  /* 1. Remove the default browser styling */
-  -webkit-appearance: none; /* For Chrome/Safari */
-  -moz-appearance: none;    /* For Firefox */
-  appearance: none;         /* Standard */
 
-  /* 2. Set the desired dimensions */
-  width: 25px; 
-  height: 25px; 
-  
-  /* 3. Style the new "box" */
-  border: 2px solid #C2C2C2;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: white;
-}
+
 
 .filter-values  div {
   display: flex;
@@ -733,6 +689,62 @@ input[type="checkbox"] {
    
 }
 
+/* CUSTOM CHECK CSS START  */
+ /* Hide default checkbox */
+.custom-checkbox,.filtervalues{
+    margin-top: 10px;
+    color: hsla(0, 0%, 41%, 1);
+}
+
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom box */
+.custom-checkbox .checkmark {
+  width: 26px;      /* box width */
+  height: 26px;     /* box height */
+  border: 2px solid hsla(0, 0%, 76%, 1); /* border color */
+  border-radius: 4px;         /* optional rounded corners */
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+
+}
+
+/* When checked → show tick mark */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  
+}
+.filtervalue .custom-checkbox{
+  display:flex;
+  align-items:center
+}
+
+
+
+/* CUSTOM CHECKBOX CSS END  */
+
+
+
+
+
 
 .product-section{
     padding-left:unset ;
@@ -764,10 +776,7 @@ input[type="checkbox"] {
     margin: 1rem auto;
       }
 
-      input[type="checkbox"]{
-        margin-right: 10px;
-
-      }
+     
       .filter-values div{
         margin-bottom: 10px;
       }
@@ -786,9 +795,6 @@ input[type="checkbox"] {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-.product-section{
-    width: 100% !important;
-}
 
 
 }
